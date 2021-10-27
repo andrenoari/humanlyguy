@@ -1,0 +1,81 @@
+﻿
+@import url('css2.css');
+html {
+    --primary: #FF5349;
+    --primary-dark: #FF5349;
+    --accent: #F9CA24;
+    --color: #000;
+    --bg: #FFFFFF;
+  }
+  html.theme--night {
+    --primary-dark: #13F1D0;
+    --accent: #E684AF;
+    --color: #D3C9E1;
+    --bg: #211630;
+  }
+  
+  html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    background: var(--bg);
+    color: var(--color);
+    transition: color 120ms ease-out 0s;
+  }
+  
+  a {
+    color: var(--primary);
+    text-decoration: none;
+    transition: all 120ms ease-out 0s;
+  }
+  a:hover, a:focus {
+    color: var(--primary-dark);
+  }
+  
+  .c-hero {
+    width: 100%;
+    max-width: 68rem;
+    margin: auto;
+    padding: 35vh 2.4rem 0;
+  }
+  
+  .c-title {
+    font-weight: 800;
+    font-size: 3.2rem;
+    line-height: 1.6;
+  }
+  @media screen and (max-width: 768px) {
+    .c-title {
+      font-size: 2.4rem;
+    }
+  }
+
+  img {
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    margin-bottom: 12px;
+    border: 3px solid #FF5349;
+  }
+  
+
+  #page-button {
+    color: #FF7F7F; 
+  }
